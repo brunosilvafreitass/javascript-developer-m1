@@ -50,5 +50,29 @@ console.log("Números Pares de 10 a 50: " + numerosParesDe10a50.join(", "));
 // 5) Dado uma lista com as médias tiradas pelos alunos. Imprima todas as médias que ficaram de recuperação (média < 5).
 //    Ex de lista = [2, 7, 3, 8, 10, 4]
 
+const media = [2, 7, 3, 8, 10, 4];
+let mediasAbaixoDe5 = [];
+for (let i = 0; i < media.length; i++) {
+  if (media[i] < 5) {
+    mediasAbaixoDe5.push(media[i]);
+  }
+}
+console.log("Médias que ficaram de recuperação " + mediasAbaixoDe5.join(", "));
+
 // 6) Dado uma lista com as notas tiradas pelos alunos. imprima a maior nota.
 //    Ex de lista de notas = [2, 7, 3, 8, 10, 4]
+
+// const notas = [2, 7, 3, 8, 10, 4];
+// let maiorNota = 0;
+// maiorNota = Math.max(...notas);
+// console.log(maiorNota);
+
+const notas = [2, 7, 3, 8, 10, 4];
+let maiorNota = 0;
+for (let i = 0; i < notas.length; i++) {
+  let nota = notas[i];
+  if (nota > maiorNota) {
+    maiorNota = nota;
+  }
+}
+console.log(maiorNota);
