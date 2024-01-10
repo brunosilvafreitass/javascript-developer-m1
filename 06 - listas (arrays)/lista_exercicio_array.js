@@ -18,6 +18,8 @@ console.log("Números Pares: " + numerosPares.join(", "));
 
 // 3) Faça um programa que dado uma lista de nomes imprima os nomes que começem com a letra "V".
 
+const nomes = [];
+
 // 4) Faça um programa que preencha uma lista com todos os números pares contidos no intervalo de 10 a 50;
 
 // 5) Dado uma lista com as médias tiradas pelos alunos. Imprima todas as médias que ficaram de recuperação (média < 5).
