@@ -18,9 +18,34 @@ console.log("Números Pares: " + numerosPares.join(", "));
 
 // 3) Faça um programa que dado uma lista de nomes imprima os nomes que começem com a letra "V".
 
-const nomes = [];
+const nomes = [
+  "Vinicius",
+  "Bruno",
+  "Vitoria",
+  "vitor",
+  "valeria",
+  "carlar",
+  "Carlos",
+];
+const nomesComV = [];
+
+for (let i = 0; i < nomes.length; i++) {
+  const nome = nomes[i];
+  if (nome.startsWith("V") || nome.startsWith("v")) {
+    nomesComV.push(nome);
+  }
+}
+console.log("Nomes Com V: " + nomesComV.join(", "));
 
 // 4) Faça um programa que preencha uma lista com todos os números pares contidos no intervalo de 10 a 50;
+
+const numerosParesDe10a50 = [];
+for (let i = 10; i <= 50; i++) {
+  if (i % 2 === 0) {
+    numerosParesDe10a50.push(i);
+  }
+}
+console.log("Números Pares de 10 a 50: " + numerosParesDe10a50.join(", "));
 
 // 5) Dado uma lista com as médias tiradas pelos alunos. Imprima todas as médias que ficaram de recuperação (média < 5).
 //    Ex de lista = [2, 7, 3, 8, 10, 4]
