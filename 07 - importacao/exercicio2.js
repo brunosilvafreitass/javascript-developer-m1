@@ -17,14 +17,13 @@ const { gets, print } = require("./funcoes-auxiliares");
 
 const numeros = gets();
 let maiorNumero = 0;
-let menorNumero = 0;
+let menorNumero = Infinity;
 
 for (let i = 0; i < numeros; i++) {
   const numero = gets();
-  if (numero < maiorNumero) {
+  if (numero < menorNumero) {
     menorNumero = numero;
-  }
-  if (numero > maiorNumero) {
+  } else if (numero > maiorNumero) {
     maiorNumero = numero;
   }
 }
